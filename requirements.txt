@@ -1,0 +1,9 @@
+lxml
+aiohttp
+sqlalchemy
+cryptography
+pytest
+jinja2
+pillow
+MarkupSafe
+HLL

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+	<soap:Body>
+		<soap:Fault>
+			<faultcode>generic</faultcode>
+			<faultstring>Generic SOAP fault</faultstring>
+			<notAValidSoapTag>{{ exception }}</notAValidSoapTag>
+		</soap:Fault>
+	</soap:Body>
+</soap:Envelope>

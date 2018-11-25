@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<soap:Header>
+		<ServiceHeader xmlns="http://www.msn.com/webservices/AddressBook">
+			<Version>12.03.1527.0001</Version>
+			<CacheKey>12r3:{{ cachekey }}</CacheKey>
+			<CacheKeyChanged>true</CacheKeyChanged>
+			<PreferredHostName>{{ host }}</PreferredHostName>
+		</ServiceHeader>
+	</soap:Header>
+	<soap:Body>
+		<ABFindContactsPagedResponse xmlns="http://www.msn.com/webservices/AddressBook">
+			<ABFindContactsPagedResult>
+				<Groups>
+					{% for group in detail.groups.values() %}
+						<Group>
+							<groupId>{{ group.id }}</groupId>
+							<groupInfo>
+								<annotations>
+									<Annotation>
+										<Name>MSN.IM.Display</Name>
+										<Value>1</Value>
+									</Annotation>
+								</annotations>
+								<groupType>c8529ce2-6ead-434d-881f-341e17db3ff8</groupType>
+								<name>{{ group.name }}</name>
+								<IsNotMobileVisible>false</IsNotMobileVisible>
+								<IsPrivate>false</IsPrivate>
+								<IsFavorite>{{ bool_to_str(group.is_favorite) }}</IsFavorite>
+							</groupInfo>
+							<propertiesChanged />
+							<fDeleted>false</fDeleted>
+							<lastChange>{{ now }}</lastChange>
+						</Group>
+					{% endfor %}
+				</Groups>
+				<Contacts>
+					{%- for contact in detail.contacts.values() -%}
+						{%- if contact.lists.__and__(Lst.FL) -%}
+							<Contact>
+								<contactId>{{ contact.head.uuid }}</contactId>
+								<contactInfo>
+									<contactType>Regular</contactType>
+									<quickName>{{ contact.status.name }}</quickName>
+									<passportName>{{ contact.head.email }}</passportName>
+									<IsPassportNameHidden>false</IsPassportNameHidden>
+									<displayName>{{ contact.status.name }}</displayName>
+									<puid>0</puid>
+									<groupIds>
+										{% for group_id in contact.groups %}
+											<guid>{{ group_id }}</guid>
+										{% endfor %}
+									</groupIds>
+									<CID>{{ contact.head.email }}</CID>
+									<IsNotMobileVisible>false</IsNotMobileVisible>
+									<isMobileIMEnabled>false</isMobileIMEnabled>
+									<isMessengerUser>{{ bool_to_str(contact.is_messenger_user) }}</isMessengerUser>
+									<isFavorite>{{ contact_is_favorite(detail, contact) }}</isFavorite>
+									<isSmtp>false</isSmtp>
+									<hasSpace>false</hasSpace>
+									<spotWatchState>NoDevice</spotWatchState>
+									<birthdate>0001-01-01T00:00:00</birthdate>
+									<primaryEmailType>ContactEmailPersonal</primaryEmailType>
+									<PrimaryLocation>ContactLocationPersonal</PrimaryLocation>
+									<PrimaryPhone>ContactPhonePersonal</PrimaryPhone>
+									<IsPrivate>false</IsPrivate>
+									<Gender>Unspecified</Gender>
+									<TimeZone>None</TimeZone>
+								</contactInfo>
+								<propertiesChanged />
+								<fDeleted>false</fDeleted>
+								<lastChange>{{ now }}</lastChange>
+							</Contact>
+						{%- endif -%}
+					{%- endfor -%}
+				</Contacts>
+				<CircleResult>
+					<CircleTicket>
+						&lt;?xml version="1.0" encoding="utf-16"?&gt;
+						&lt;SignedTicket xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ver="1" keyVer="1"&gt;
+							&lt;Data&gt;PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTE2Ij8+DQo8VGlja2V0IHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiPg0KICA8VFM+MjAwNy0wNi0xMVQxNDoxNTozNy4yMjQ4NzNaPC9UUz4NCiAgPENJRD4xOTAzNDMzMDUyMTExOTc3ODE5PC9DSUQ+DQo8L1RpY2tldD4=&lt;/Data&gt;
+							&lt;Sig&gt;Q8+XE+Cox+gyVsmQFFlaBRXmiaB4HPiNjcS7bF52bWho8rK2Yxed1piOSjzGg5/YIcb874yfJtRThdul4O+NdKgJgeg5WTgSwkigp/Z7gyhC6bYXgZnSlB/WmI7GAAxQFgYGEYAM19l7OCrm/7H+cR8TGVdDShLSvOcHrP1KtGc=&lt;/Sig&gt;
+						&lt;/SignedTicket&gt;
+					</CircleTicket>
+				</CircleResult>
+				<Ab>
+					<abId>00000000-0000-0000-0000-000000000000</abId>
+					<abInfo>
+						<ownerPuid>0</ownerPuid><OwnerCID>1903433052111977819</OwnerCID><ownerEmail>{{ user.email }}</ownerEmail>
+						<fDefault>true</fDefault><joinedNamespace>false</joinedNamespace><IsBot>false</IsBot>
+						<IsParentManaged>false</IsParentManaged>
+						<SubscribeExternalPartner>false</SubscribeExternalPartner>
+						<NotifyExternalPartner>false</NotifyExternalPartner>
+						<AddressBookType>Individual</AddressBookType>
+					</abInfo>
+					<lastChange>{{ now }}</lastChange>
+					<DynamicItemLastChanged>0001-01-01T00:00:00</DynamicItemLastChanged>
+					<createDate>{{ now }}</createDate>
+					<propertiesChanged />
+				</Ab>
+			</ABFindContactsPagedResult>
+		</ABFindContactsPagedResponse>
+	</soap:Body>
+</soap:Envelope>

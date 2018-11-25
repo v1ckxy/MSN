@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<soap:Header>
+		<SequenceAcknowledgment xmlns="http://schemas.xmlsoap.org/ws/2003/03/rm">
+			<Identifier xmlns="http://schemas.xmlsoap.org/ws/2002/07/utility">http://messenger.msn.com</Identifier>
+			<AcknowledgmentRange Upper="1" Lower="1" />
+		</SequenceAcknowledgment>
+	</soap:Header>
+	<soap:Body>
+		<StoreResponse xmlns="http://messenger.msn.com/ws/2004/09/oim/">
+			<PointsConsumed>0</PointsConsumed>
+		</StoreResponse>
+	</soap:Body>
+</soap:Envelope>

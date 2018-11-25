@@ -1,0 +1,118 @@
+<MsgrConfig>
+	<Simple>
+		<Config><ExpiresInDays>0</ExpiresInDays></Config>
+		<DisablePhoneDialer>1</DisablePhoneDialer>
+		<Logitech>
+			<PreRollEnabled>0</PreRollEnabled>
+			<PremiumAVConfigServer>http://escargot.pokeacer.xyz/config/stunlocate.sxml</PremiumAVConfigServer>
+			<WebcamConfigServer>http://escargot.pokeacer.xyz/config/stunlocate.sxml</WebcamConfigServer>
+		</Logitech>
+		
+		<MinFlashPlayer BuildNumber="60" MajorVersion="7" MinorVersion="0"></MinFlashPlayer>
+		<Relay>
+			<Enabled>0</Enabled>
+			<MaxCallLength>0</MaxCallLength>
+		</Relay>
+		<TrustedDomains>
+			<domain name="wink.messengergeek.com"/>
+			<domain name="messengergeek.com"/>
+			<domain name="escargot.log1p.xyz"/>
+		</TrustedDomains>
+		<ErrorResponseTable>
+			<Feature type="0" name="Login">
+				<Entry hr="0x80072EE7" action="3"></Entry>
+				<Entry hr="0x81000306" action="3"></Entry>
+				<Entry hr="0x80072EFD" action="3"></Entry>
+				<Entry hr="0x81000362" action="3"></Entry>
+				<Entry hr="0x8100030E" action="3"></Entry>
+				<Entry hr="0x80072745" action="3"></Entry>
+				<Entry hr="0x800701F7" action="3"></Entry>
+				<Entry hr="0x80072EFF" action="3"></Entry>
+				<Entry hr="0x81000363" action="3"></Entry>
+				<Entry hr="0x81000395" action="3"></Entry>
+				<Entry hr="0x800B0001" action="3"></Entry>
+				<Entry hr="0x81000323" action="3"></Entry>
+				<Entry hr="0x80072F19" action="3"></Entry>
+				<Entry hr="0x800701F8" action="3"></Entry>
+				<Entry hr="0x80072746" action="3"></Entry>
+				<Entry hr="0x800701F6" action="3"></Entry>
+				<Entry hr="0x81000377" action="3"></Entry>
+				<Entry hr="0x81000314" action="3"></Entry>
+				<Entry hr="0x81000378" action="3"></Entry>
+				<Entry hr="0x80072EFF" action="3"></Entry>
+				<Entry hr="0x80070190" action="3"></Entry>
+				<Entry hr="0x80070197" action="3"></Entry>
+				<Entry hr="0x80048820" action="3"></Entry>
+				<Entry hr="0x80048829" action="3"></Entry>
+				<Entry hr="0x80048834" action="3"></Entry>
+				<Entry hr="0x80048852" action="3"></Entry>
+				<Entry hr="0x8004886a" action="3"></Entry>
+				<Entry hr="0x8004886b" action="3"></Entry>
+			</Feature>
+			<Feature type="2" name="MapFile">
+				<Entry hr="0x810003F0" action="3"></Entry>
+				<Entry hr="0x810003F1" action="3"></Entry>
+				<Entry hr="0x810003F2" action="3"></Entry>
+				<Entry hr="0x810003F3" action="3"></Entry>
+				<Entry hr="0x810003F4" action="3"></Entry>
+				<Entry hr="0x810003F5" action="3"></Entry>
+				<Entry hr="0x810003F6" action="3"></Entry>
+				<Entry hr="0x810003F7" action="3"></Entry>
+			</Feature>
+		</ErrorResponseTable>
+	</Simple>
+	<TabConfig>
+		<msntabdata>
+			<tab><type>page</type><contenturl>http://escargot.log1p.xyz/etc/escargot-today</contenturl><hiturl>http://escargot.log1p.xyz/etc/escargot-today</hiturl><image>http://storage.googleapis.com/escargot-storage-1/public/tabicon/escargot.png</image><name>Escargot Today</name><tooltip>Escargot Today</tooltip><siteid>0</siteid><notificationid>0</notificationid></tab>
+			<tab><type>page</type><contenturl>http://wink.messengergeek.com/</contenturl><hiturl>http://wink.messengergeek.com/</hiturl><image>http://storage.googleapis.com/escargot-storage-1/public/tabicon/messenger-geek.png</image><name>MessengerGeek</name><tooltip>MessengerGeek Forum</tooltip><siteid>0</siteid><notificationid>0</notificationid></tab>
+			<tab><type>page</type><contenturl>http://m.facebook.com</contenturl><hiturl>http://m.facebook.com</hiturl><image>http://storage.googleapis.com/escargot-storage-1/public/tabicon/facebook.png</image><name>Facebook</name><tooltip>Facebook</tooltip><siteid>0</siteid><notificationid>0</notificationid></tab>
+			<tab><type>page</type><contenturl>http://m.facebook.com/messages</contenturl><hiturl>http://m.facebook.com/messages</hiturl><image>http://storage.googleapis.com/escargot-storage-1/public/tabicon/facebook-messenger.png</image><name>Facebook Messenger</name><tooltip>Facebook Messenger</tooltip><siteid>0</siteid><notificationid>0</notificationid></tab>
+			<tab><type>page</type><contenturl>http://m.youtube.com</contenturl><hiturl>http://m.youtube.com</hiturl><image>http://storage.googleapis.com/escargot-storage-1/public/tabicon/youtube.png</image><name>YouTube</name><tooltip>YouTube</tooltip><siteid>0</siteid><notificationid>0</notificationid></tab>
+			<tab><type>page</type><contenturl>http://msn.com/weather</contenturl><hiturl>http://msn.com/weather</hiturl><image>http://storage.googleapis.com/escargot-storage-1/public/tabicon/msn-weather.png</image><name>MSN Weather</name><tooltip>MSN Weather</tooltip><siteid>0</siteid><notificationid>0</notificationid></tab>
+			<tab><type>page</type><contenturl>http://escargotspaces.cf/sites</contenturl><hiturl>http://escargotspaces.cf/sites</hiturl><image>http://storage.googleapis.com/escargot-storage-1/public/tabicon/escargot-spaces.png</image><name>Escargot Spaces</name><tooltip>Escargot Spaces</tooltip><siteid>0</siteid><notificationid>0</notificationid></tab>
+			<tab><type>page</type><contenturl>http://m.twitter.com</contenturl><hiturl>http://m.twitter.com</hiturl><image>http://storage.googleapis.com/escargot-storage-1/public/tabicon/twitter.png</image><name>Twitter</name><tooltip>Twitter</tooltip><siteid>0</siteid><notificationid>0</notificationid></tab>
+			<tab><type>page</type><contenturl>http://play.spotify.com</contenturl><hiturl>http://play.spotify.com</hiturl><image>http://storage.googleapis.com/escargot-storage-1/public/tabicon/spotify.png</image><name>Spotify</name><tooltip>Spotify</tooltip><siteid>0</siteid><notificationid>0</notificationid></tab>
+			<tab><type>page</type><contenturl>http://ebay.com</contenturl><hiturl>http://ebay.com</hiturl><image>http://storage.googleapis.com/escargot-storage-1/public/tabicon/ebay.png</image><name>eBay</name><tooltip>eBay</tooltip><siteid>0</siteid><notificationid>0</notificationid></tab>
+		</msntabdata>
+		<msntabsettings>
+			<oemdisplaylimit>1</oemdisplaylimit><oemtotallimit>1</oemtotallimit>
+		</msntabsettings>
+		<AbchCfg>
+			<abchconfig><url>http://contacts.msn.com/abservice/abservice.asmx</url></abchconfig>
+		</AbchCfg>
+	</TabConfig>
+	<LocalizedConfig Market="en-US">
+		<ContactCard>
+			<AddToMySpaceSiteId>45930</AddToMySpaceSiteId>
+			<AddToMySpaceUrl>http://spaces.msn.com/?addblogentry=true&amp;mkt=en-us</AddToMySpaceUrl>
+			<ContactCardDisabled>false</ContactCardDisabled>
+			<CreateSpaceSiteId>45930</CreateSpaceSiteId>
+			<CreateSpaceUrl>http://escargotspaces.cf/register</CreateSpaceUrl>
+			<GetItemVerUrl>http://storage.msn.com/storageservice/schematizedstore.asmx</GetItemVerUrl>
+			<GetXmlFeedUrl>http://services.spaces.msn.com/contactcard/contactcardservice.asmx</GetXmlFeedUrl>
+			<MySpaceSiteId>45930</MySpaceSiteId>
+			<MySpaceUrl>http://escargotspaces.cf</MySpaceUrl>
+			<SpaceBaseSiteId>45930</SpaceBaseSiteId>
+			<SpaceBaseUrl>http://escargotspaces.cf</SpaceBaseUrl>
+			<SpaceIntegrationEnabled>true</SpaceIntegrationEnabled>
+		</ContactCard>
+		<MSNSearch>
+			<DesktopInstallURL>https://duckduckgo.com/?q=$QUERY$&amp;ia=web</DesktopInstallURL>
+			<ImagesURL>https://duckduckgo.com/?q=$QUERY$&amp;ia=images</ImagesURL>
+			<NearMeURL>https://duckduckgo.com/?q=$QUERY$&amp;ia=web</NearMeURL>
+			<NewsURL>https://duckduckgo.com/?q=$QUERY$+news&amp;ia=news</NewsURL>
+			<SearchKidsURL>https://duckduckgo.com/?q=$QUERY$&amp;ia=web</SearchKidsURL>
+			<SearchURL>https://duckduckgo.com/?q=$QUERY$&amp;ia=web</SearchURL>
+			<SharedSearchURL>https://duckduckgo.com/?q=$QUERY$&amp;ia=web</SharedSearchURL>
+			<SharedSearchURL2>https://duckduckgo.com/?q=$QUERY$&amp;ia=web</SharedSearchURL2>
+		</MSNSearch>
+		<MsnTodayConfig>
+			<MsnTodaySiteID>6528</MsnTodaySiteID>
+			<MsnTodayURL>http://escargot.log1p.xyz/etc/escargot-today</MsnTodayURL>
+		</MsnTodayConfig>
+		<RL>
+			<ViewProfileURL>https://escargot.pokeacer.xyz/dir/</ViewProfileURL>
+		</RL>
+		<TermsOfUse><TermsOfUseSID>956</TermsOfUseSID><TermsOfUseURL>http://escargot.log1p.xyz/etc/tos</TermsOfUseURL></TermsOfUse>
+	</LocalizedConfig>
+</MsgrConfig>

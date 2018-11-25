@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<soap:Body>
+		<soap:Fault>
+			<faultcode xmlns:q0="http://messenger.msn.com/ws/2004/09/oim/">q0:AuthenticationFailed</faultcode>
+			<faultstring>Exception of type System.Web.Services.Protocols.SoapException was thrown.</faultstring>
+			<faultactor>https://ows.messenger.msn.com/OimWS/oim.asmx</faultactor>
+			<detail>
+				<TweenerChallenge xmlns="http://messenger.msn.com/ws/2004/09/oim/">lc=1033,id=507,tw=120,ru=http://messenger.msn.com,ct=1132075720,kpp=1,kv=7,ver=2.1.6000.1,tpf=ab7bfa98f7683164c11c7dba276daa58</TweenerChallenge>
+				<LockKeyChallenge xmlns="http://messenger.msn.com/ws/2004/09/oim/">1850937852</LockKeyChallenge>
+			</detail>
+		</soap:Fault>
+	</soap:Body>
+</soap:Envelope>

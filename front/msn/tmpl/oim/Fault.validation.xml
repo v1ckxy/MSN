@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<soap:Body>
+		<soap:Fault>
+			<faultcode>soap:Client</faultcode>
+			<faultstring>Schema validation error</faultstring>
+			<faultactor>https://rsi.hotmail.com/rsi/rsi.asmx</faultactor>
+			<detail />
+		</soap:Fault>
+	</soap:Body>
+</soap:Envelope>

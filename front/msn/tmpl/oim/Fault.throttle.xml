@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<soap:Header>
+		<Machine xmlns="http://messenger.msn.com/ws/2004/09/oim/" name="BAYM-OW15" ver="12.30.1623.0"/>
+	</soap:Header>
+	<soap:Body>
+		<soap:Fault>
+			<faultcode xmlns:q0="http://messenger.msn.com/ws/2004/09/oim/">q0:SenderThrottleLimitExceeded</faultcode>
+			<faultstring>Exception of type 'System.Web.Services.Protocols.SoapException' was thrown.</faultstring>
+			<detail/>
+		</soap:Fault>
+	</soap:Body>
+</soap:Envelope>

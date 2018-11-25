@@ -1,0 +1,76 @@
+Useful Links
+============
+http://msn-messenger-protocol.herokuapp.com/index.php
+http://msnpiki.tadeu.org/index.php
+http://web.archive.org/web/20150310041951/http://msnpiki.msnfanatic.com/index.php/Main_Page
+http://web.archive.org/web/20120119043443/http://telepathy.freedesktop.org/wiki/Pymsn/MSNP/ContactListActions
+https://tools.ietf.org/html/draft-movva-msn-messenger-protocol-00
+https://social.msdn.microsoft.com/Forums/sqlserver/en-US/f0766af1-beed-4381-beb0-a45ed8acd4c7/cant-authenticate-loginnetpassportcom?forum=wlmessengerdev
+http://web.archive.org/web/20040218095638/http://wisoftware.host.sk/msn6/
+http://wiki.dequis.org/projects/msn/protocol_versions/
+https://github.com/msndevs/protocol-docs/wiki
+http://www.codeproject.com/Articles/24444/Single-Sign-On-with-MSN-Protocol1
+https://code.google.com/archive/p/msnp-sharp/wikis/KB_MSNP21.wiki
+https://searchcode.com/codesearch/view/2262024
+https://wenku.baidu.com/view/73b4f9fe941ea76e58fa0456.html
+https://github.com/billiob/papyon/tree/master/papyon/service
+
+Polygamy
+========
+
+The MSN polygamy program changes one byte (0xb7 -> 0xb6) at 0x1406b1 (7.0.0770):
+
+- 01406b0: b73d 0000 0f00 b585 0001 6a00 ffff 2877
++ 01406b0: b63d 0000 0f00 b585 0001 6a00 ffff 2877
+
+MSN 1.0.0863: 0x 263ce
+MSN 2.0.0083: 0x 2acef
+MSN 2.0.0085: 0x 2ad07
+MSN 2.2.1053: 0x 17160
+MSN 3.0.0286: 0x 1f234
+MSN 3.5.0077: 0x 30389
+MSN 3.6.0025: 0x 2f82d
+MSN 4.5.0121: 0x 4e692
+MSN 4.6.0073: 0x 1e794
+MSN 4.6.0083: 0x 2b9c4
+MSN 5.0.0544: 0x 46739 | nexus: 0x655a0 | 0x f048
+MSN 6.0.0602: 0x ccbf2 | nexus: 0x1f164 | 0x1f238
+MSN 6.2.0137: 0x dffe1 | nexus: 0x22ce0 | 0x22d68
+MSN 7.0.0777: 0x1406b1 | nexus: 0x2cd80 | 0x2ce18
+MSN 7.0.0813: 0x147079 | nexus: 0x2d098 | 0x2d140
+MSN 7.0.0820: 0x147112 | nexus: 0x2cfb8 | 0x2d060
+MSN 7.5.0311: 0x157607 | nexus: 0x2e8f8 | 0x2e9b8
+MSN 7.5.0324: 0x1580ec | --             | 0x2e9e8
+WLM 8.1.0178: 0x1430ef
+
+MSN <  5: uses registry for messenger.hotmail.com
+MSN >= 5: uses nexus
+
+MSN/MSNP Grid
+=====================
+
+MSN  1.0  (1999-07-17):                                          2
+MSN  2.0  (1999-11-16):                                        3 2
+MSN  2.2+ (2000-03-28):                                      4 3
+MSN  3.0+ (2000-08-07):                                    5 4
+MSN  4.5+ (2002-09-24):                                7 6 5 4
+MSN  5.0  (2003-02-19):                              8
+MSN  6.0  (2003-07-11):                            9 8
+MSN  6.1+ (2004-06-01):                         10 9
+MSN  7.0  (2005-03-31):                      11 10
+MSN  7.5  (2005-10-18):                   12 11 10
+WLM  8.0  (2006-06-19):             14 13
+WLM  8.1+ (2007-01-29):          15 ?? ??
+WLM 14    (2009-01-07):       18 ?? ?? ??
+WLM 15    (2010-09-30):    19 ?? ?? ?? ??
+WLM 16    (2012-08-07): 21 ?? ?? ?? ?? ??
+
+
+Other
+=====
+
+Clicking "MSN Today" does a request to http://config.messenger.msn.com/Config/MsgrConfig.asmx.
+MSN also keeps trying to get that URL for a while, until it gives up.
+When it gives up, it removes the "MSN Today" button.
+
+Example response: http://www.mail-archive.com/amsn-devel@lists.sourceforge.net/msg04225/getclientconfig.log

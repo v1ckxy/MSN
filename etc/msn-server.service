@@ -1,0 +1,16 @@
+[Unit]
+After=network-online.target
+Wants=network-online.target systemd-networkd-wait-online.service
+
+[Service]
+Restart=on-failure
+StartLimitInterval=3600
+StartLimitBurst=5
+LimitNOFILE=4096
+User=www-data
+Group=www-data
+WorkingDirectory=/var/www/msn-server
+ExecStart=/usr/bin/python3.6 run_all.py
+
+[Install]
+WantedBy=multi-user.target

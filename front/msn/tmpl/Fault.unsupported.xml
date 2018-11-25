@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<soap:Body>
+		<soap:Fault>
+			<faultcode>soap:Client</faultcode>
+			<faultstring>API {{ faultactor }} no longer supported</faultstring>
+			<faultactor>http://www.msn.com/webservices/AddressBook/{{ faultactor }}</faultactor>
+			<detail>
+				<errorcode xmlns="http://www.msn.com/webservices/AddressBook">Forbidden</errorcode>
+				<errorstring xmlns="http://www.msn.com/webservices/AddressBook">API {{ faultactor }} no longer supported</errorstring>
+				<machineName xmlns="http://www.msn.com/webservices/AddressBook">DM2CDP1011931</machineName>
+				<additionalDetails>
+					<originalExceptionErrorMessage>API {{ faultactor }} no longer supported</originalExceptionErrorMessage>
+				</additionalDetails>
+			</detail>
+		</soap:Fault>
+	</soap:Body>
+</soap:Envelope>

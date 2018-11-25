@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<soap:Header>
+		<AffinityCacheHeader xmlns="http://www.msn.com/webservices/storage/w10">
+			<CacheKey>{{ cachekey }}</CacheKey>
+		</AffinityCacheHeader>
+		<StorageUserHeader xmlns="http://www.msn.com/webservices/storage/w10">
+			<Puid>0</Puid>
+			<Cid>{{ cid }}</Cid>
+			<ApplicationId>0</ApplicationId>
+			<DeviceId>0</DeviceId>
+			<IsTrustedDevice>false</IsTrustedDevice>
+			<IsStrongAuth>false</IsStrongAuth>
+			<TicketToken>t={{ pptoken1 }}g6HvEdmXr19KcNgO+7mAAHilmBXV2qlTwhXbtHXIf9esu0/aIf9h+jDWPy5r+PpuXP9jaUIw93sYpxjDPpMNQ1jeqHcpT4cw4G5gIUqpVIQy9MoGzik8NoxAJxkwJdThl4f/aG9HDOrqI/AFzeLwIwAt+7+VJiBTqI0yqdE7TM0Jxxt7gH4BEYCLJ1jtN4JVA2YAAAicwJVj1GTR/dABKtKjMrmRfdjQogNTlxBOXuDd0mYzNBRavJs6CYHUMEow44tQBg1QBdLbpWg5NMjcL0TIE5uzKokyBUXmRpd/cH4X0b8WPAygKGXZW8PRg4vL8nE/s5kwM6ZOcbcl4iUqDsONeW43xiV+YOoiDLJH+VnvCSsKg84Z9yeJpqto8rQ/I0RTuvTXS0W7MPWJQkVzcGOAF/IrKpEC1D/rlfx+aWezU/HQa0VaEZpLzRU/HlJqve5YWz7VUWpGDdHZEAuI2v2v0obW91Q2iK62rubMW3R3L7J4WVqrs7rqXnEsO6ySIRm3pOU0uzn6MwUrWNVPtNo80Q8P8ZSWNA+wY1yr2RhgFunACfnqOBJaASdGRUGZGmqZEf9S2CTXNhBHECYkEmM1x2ZV1lsqQlCPM2cWa/peYBRMIEZkknMtSYl0MsTbfCT+6/FYddFip+h4nc/eusYGqIHb0ttPlPg9w2vKHGrJiOztgRXfgDHg/LV517ZSgtDgV5Ms1paV1pigPESpjbpH9CahpPD2MCj6Hufw2tAc6rCV5pgTvfTkhD7Ix/z2521t/63qdXrxyyC0Zd2KUyAEeIvAX64JmWV28c7NQTLUCQiOO6kz0fWXuMbKFugkAg==&amp;p=</TicketToken>
+			<IsAdmin>false</IsAdmin>
+			<LanguagePreference>0</LanguagePreference>
+			<Claims />
+		</StorageUserHeader>
+	</soap:Header>
+	<soap:Body>
+		<UpdateProfileResponse xmlns="http://www.msn.com/webservices/storage/w10" />
+	</soap:Body>
+</soap:Envelope>

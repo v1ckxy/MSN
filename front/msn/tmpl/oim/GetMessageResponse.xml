@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<soap:Body>
+		<GetMessageResponse xmlns="http://www.hotmail.msn.com/ws/2004/09/oim/rsi">
+			<GetMessageResult>
+				X-Message-Info: cwRBnLifKNE8dVZlNj6AiX8142B67OTjG9BFMLMyzuui1H4Xx7m3NQ==
+				Received: from OIM-SSI02.phx.gbl ([65.54.237.206]) by oim1-f1.hotmail.com with Microsoft SMTPSVC(6.0.3790.211); Tue, 15 Nov 2005 14:24:27 -0800
+				Received: from mail pickup service by OIM-SSI02.phx.gbl with Microsoft SMTPSVC; Tue, 15 Nov 2005 14:24:27 -0800
+				From: =?utf-8?B?SW5reQ==?= [Removed]
+				To: [Removed]
+				Subject: 
+				X-OIM-originatingSource: 217.121.64.74
+				X-OIMProxy: MSNMSGR
+				MIME-Version: 1.0
+				Content-Type: text/plain; charset=UTF-8
+				Content-Transfer-Encoding: base64
+				X-OIM-Message-Type: OfflineMessage
+				X-OIM-Run-Id: {CA7B4177-1CFB-49CE-9F02-982C704A18EB}
+				X-OIM-Sequence-Num: 1
+				Message-ID: &lt;OIM-SSI02zDv60gxapz00061a8b@OIM-SSI02.phx.gbl&gt;
+				X-OriginalArrivalTime: 15 Nov 2005 22:24:27.0201 (UTC) FILETIME=[56E50B10:01C5EA33]
+				Date: 15 Nov 2005 14:24:27 -0800
+				Return-Path: ndr@oim.messenger.msn.com
+				
+				SGVsbG8sIHdvcmxkISA6KQ==
+			</GetMessageResult>
+		</GetMessageResponse>
+	</soap:Body>
+</soap:Envelope>
